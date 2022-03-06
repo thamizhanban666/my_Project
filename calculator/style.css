@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   letter-spacing: 0.05em;
+   font-weight: bold;
+   font-family: 'poppins', sans-serif
+}
+
+body {
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   /* background: rgba(10, 10, 10, 0.1) */
+}
+
+.main {
+   position: relative;
+   /* display: flex;
+   align-items: center;
+   flex-direction: column; */
+   /* max-width: 200px; */
+   /* padding: 15px 10px; */
+   /* box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5); */
+   /* background: rgb(196, 191, 191); */
+   /* border-radius: 10px */
+}
+
+.display {
+   /* position: relative; */
+   max-width: 300px;
+   /* width: 100%; */
+   height: 80px;
+   /* margin-bottom: 10px */
+}
+
+input:focus {
+   outline: none;
+}
+
+#result {
+   font-size: 2em;
+   /* width: 100%;
+   height: 100%; */
+   /* border-radius: 5px; */
+}
+
+#result,
+#history {
+   padding-right: 1%;
+   padding-left: 1%;
+   text-align: right;
+   background-color: rgb(243, 249, 255);
+}
+
+.outer-div {
+   border-radius: 2em;
+   border-top-left-radius: 0.5em;
+   border-top-right-radius: 0.5em;
+   background-image: repeating-linear-gradient(45deg, #00118d, #091CAA 3px, #191983 30px, #1d0179 60px);
+}
+
+.inner-div {
+   background-color: white;
+   border-radius: 2em;
+}
+
+.buttons {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 100%;
+}
+
+button {
+   height: 50px;
+   width: 50px;
+   padding: 0.4em;
+   border-radius: 100%;
+   background: rgb(247, 247, 247);
+   border: none;
+   /* outline: 10px; */
+   margin: 0 9px;
+   cursor: pointer;
+   font-size: 22px;
+   box-shadow: inset 2px 2px 5px rgba(22, 22, 22, 0.2), 5px 5px 4px rgba(0, 0, 0, 0.2)
+}
+
+button:hover {
+   background: rgba(0, 0, 0, 0.2)
+}
+
+#equal {
+   background: #58D68D
+}
+
+#clear {
+   background: #FF8A65
+}
+
+#braces,
+#modulus,
+#divide,
+#multiply,
+#subtract,
+#add {
+   background-color: rgb(255, 239, 218);
+}
+
+/* #back {
+   font-size: 22px;
+} */
+@media screen and (min-width:292px) and (max-width:320px) {
+
+   button {
+      height: 46px;
+      width: 46px;
+      font-size: 22px;
+      margin: 0 8px;
+
+   }
+
+}
+
+@media screen and (min-width:268px) and (max-width:291px) {
+
+   button {
+      height: 42px;
+      width: 42px;
+      font-size: 18px;
+      margin: 0 7px;
+
+   }
+
+}
+
+@media screen and (min-width:252px) and (max-width:267px) {
+
+   button {
+      height: 40px;
+      width: 40px;
+      font-size: 16px;
+      margin: 0 6px;
+
+   }
+
+}
+
+@media screen and (min-width:236px) and (max-width:251px) {
+
+   button {
+      height: 38px;
+      width: 38px;
+      font-size: 15px;
+      margin: 0 5px;
+
+   }
+
+}

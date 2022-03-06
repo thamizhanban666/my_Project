@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dom Calculator</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/c766818d70.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="./style.css">
+
+</head>
+<body >
+
+<div class="outer-div position-relative d-flex flex-column align-items-center border border-1 border-dark ">
+
+   <div class="display w-100 m-2"> 
+      <div id="history" class="w-100 h-50 border border-0 rounded-top"></div>
+      <input type="tel" id="result" class=" w-100 h-75 position-relative border border-0  rounded-bottom" placeholder="0" onkeypress="keyPress()"></input>
+   </div>
+
+   <div class="inner-div border border-1 border-dark px-1 m-2 mt-4">
+
+      <div class="buttons">
+         <button id="clear">C</button>
+         <button name="generalBtn" id="braces">()</button>         
+         <button name="generalBtn" id="modulus" value="%">%</button> 
+         <button name="generalBtn" id="divide" value="/"><i class="fa-solid fa-divide"></i></button> 
+      </div>
+      
+      <div class="buttons"> 
+         <button name="generalBtn" id="7" value="7">7</button> 
+         <button name="generalBtn" id="8" value="8">8</button>
+         <button name="generalBtn" id="9" value="9">9</button>
+         <button name="generalBtn" id="multiply" value="*"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      
+      <div class="buttons"> 
+         <button name="generalBtn" id="4" value="4">4</button> 
+         <button name="generalBtn" id="5" value="5">5</button>
+         <button name="generalBtn" id="6" value="6">6</button> 
+         <button name="generalBtn" id="subtract" value="-"><i class="fa-solid fa-minus"></i></button> 
+      </div>
+      
+      <div class="buttons"> 
+         <button name="generalBtn" id="1" value="1">1</button> 
+         <button name="generalBtn" id="2" value="2">2</button> 
+         <button name="generalBtn" id="3" value="3">3</button> 
+         <button name="generalBtn" id="add" value="+"><i class="fa-solid fa-plus"></i></button> 
+      </div>
+      
+      <div class="buttons"> 
+         <button name="generalBtn" id="0" value="0">0</button> 
+         <button name="generalBtn" id="dot" value=".">.</button> 
+         <button id="back"><i class="fa-solid fa-delete-left"></i></button> 
+         <button id="equal" class="rounded-pill">=</button> 
+      </div>
+
+   </div>
+</div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
