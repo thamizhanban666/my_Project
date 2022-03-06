@@ -17,8 +17,14 @@ generalBtn.forEach((btn) => {
 })
 
 equal.addEventListener("click", () => {
+   let rArr = result.value.split("");
+   rArr.map((e, i) => {
+      if (e == "%") {
+         rArr.splice(i,1,"*0.01")
+      }
+   })
    history.innerText = result.value;
-   result.value = eval(result.value);
+   result.value = eval(rArr.join(""));
    resultText = eval(result.value);
 
 })
